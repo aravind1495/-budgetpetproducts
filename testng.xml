@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Basic Functions Test">
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="https://www.budgetpetproducts.com.au/" />
+	<parameter name="email" value="mrmeeseekz@null.net" />
+	<parameter name="password" value="myTest@Pass14" />
+
+	<test name="Verify Login">
+		<classes>
+			<class name="com.bpp.testCases.VerifyLogin">
+				<methods>
+					<include name="verifyLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Verify Order">
+		<parameter name="prodToSelect" value="Vetafarm South American Mix" />
+		<classes>
+			<class name="com.bpp.testCases.VerifyOrder">
+				<methods>
+					<include name="navigateProductAndVerifyOrder" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Search and Verify Suggestion">
+		<parameter name="searchKey" value="cat" />
+		<classes>
+			<class name="com.bpp.testCases.SearchProducts">
+				<methods>
+					<include name="verifySearchSuggestion" />
+					<exclude name="searchAndSelectProdFromSuggesstion" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Search and Select from Suggestion">
+		<parameter name="searchKey" value="dog" />
+		<parameter name="selectSearchSuggestion" value="dog toys" />
+		<parameter name="prodToSelect" value="Shakers Luvs Giraffe" />
+		<classes>
+			<class name="com.bpp.testCases.SearchProducts">
+				<methods>
+					<include name="searchAndSelectProdFromSuggesstion" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

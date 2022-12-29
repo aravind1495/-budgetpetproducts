@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="10" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-14T14:30:08 IST" name="Basic Functions Test" finished-at="2022-11-14T14:31:17 IST" duration-ms="69770">
+    <groups>
+    </groups>
+    <test started-at="2022-11-14T14:30:08 IST" name="Verify Login" finished-at="2022-11-14T14:30:24 IST" duration-ms="16513">
+      <class name="com.bpp.testCases.VerifyLogin">
+        <test-method is-config="true" signature="openURL(java.lang.String)[pri:0, instance:com.bpp.testCases.VerifyLogin@5fe94a96]" started-at="2022-11-14T14:30:08 IST" name="openURL" finished-at="2022-11-14T14:30:10 IST" duration-ms="2600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.budgetpetproducts.com.au/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.bpp.testCases.VerifyLogin@5fe94a96]" started-at="2022-11-14T14:30:11 IST" name="verifyLogin" data-provider="credentials" finished-at="2022-11-14T14:30:17 IST" duration-ms="6134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mrmeeseekz@null.net]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[myTest@Pass14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.bpp.testCases.VerifyLogin@5fe94a96]" started-at="2022-11-14T14:30:17 IST" name="verifyLogin" data-provider="credentials" finished-at="2022-11-14T14:30:19 IST" duration-ms="1527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mrmeeseekz@null.net]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[IvalidPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.bpp.testCases.VerifyLogin@5fe94a96]" started-at="2022-11-14T14:30:19 IST" name="verifyLogin" data-provider="credentials" finished-at="2022-11-14T14:30:21 IST" duration-ms="2748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[myTest@Pass14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.bpp.testCases.VerifyLogin@5fe94a96]" started-at="2022-11-14T14:30:21 IST" name="verifyLogin" data-provider="credentials" finished-at="2022-11-14T14:30:24 IST" duration-ms="2762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[IvalidPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+      </class> <!-- com.bpp.testCases.VerifyLogin -->
+    </test> <!-- Verify Login -->
+    <test started-at="2022-11-14T14:30:24 IST" name="Verify Order" finished-at="2022-11-14T14:30:55 IST" duration-ms="30620">
+      <class name="com.bpp.testCases.VerifyOrder">
+        <test-method is-config="true" signature="openURL(java.lang.String)[pri:0, instance:com.bpp.testCases.VerifyOrder@6743e411]" started-at="2022-11-14T14:30:24 IST" name="openURL" finished-at="2022-11-14T14:30:26 IST" duration-ms="1808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.budgetpetproducts.com.au/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="navigateProductAndVerifyOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bpp.testCases.VerifyOrder@6743e411]" started-at="2022-11-14T14:30:26 IST" name="navigateProductAndVerifyOrder" finished-at="2022-11-14T14:30:55 IST" duration-ms="28806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vetafarm South American Mix]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mrmeeseekz@null.net]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[myTest@Pass14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateProductAndVerifyOrder -->
+      </class> <!-- com.bpp.testCases.VerifyOrder -->
+    </test> <!-- Verify Order -->
+    <test started-at="2022-11-14T14:30:55 IST" name="Search and Verify Suggestion" finished-at="2022-11-14T14:30:59 IST" duration-ms="3937">
+      <class name="com.bpp.testCases.SearchProducts">
+        <test-method is-config="true" signature="openURL(java.lang.String)[pri:0, instance:com.bpp.testCases.SearchProducts@1e800aaa]" started-at="2022-11-14T14:30:55 IST" name="openURL" finished-at="2022-11-14T14:30:56 IST" duration-ms="1144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.budgetpetproducts.com.au/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="verifySearchSuggestion(java.lang.String)[pri:0, instance:com.bpp.testCases.SearchProducts@1e800aaa]" started-at="2022-11-14T14:30:56 IST" name="verifySearchSuggestion" finished-at="2022-11-14T14:30:59 IST" duration-ms="2786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchSuggestion -->
+      </class> <!-- com.bpp.testCases.SearchProducts -->
+    </test> <!-- Search and Verify Suggestion -->
+    <test started-at="2022-11-14T14:30:59 IST" name="Search and Select from Suggestion" finished-at="2022-11-14T14:31:17 IST" duration-ms="18652">
+      <class name="com.bpp.testCases.SearchProducts">
+        <test-method is-config="true" signature="getDriver(java.lang.String)[pri:0, instance:com.bpp.testCases.SearchProducts@74e52ef6]" started-at="2022-11-14T14:30:05 IST" name="getDriver" finished-at="2022-11-14T14:30:08 IST" duration-ms="2303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="openURL(java.lang.String)[pri:0, instance:com.bpp.testCases.SearchProducts@74e52ef6]" started-at="2022-11-14T14:30:59 IST" name="openURL" finished-at="2022-11-14T14:31:00 IST" duration-ms="1137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.budgetpetproducts.com.au/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="searchAndSelectProdFromSuggesstion(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bpp.testCases.SearchProducts@74e52ef6]" started-at="2022-11-14T14:31:00 IST" name="searchAndSelectProdFromSuggesstion" finished-at="2022-11-14T14:31:17 IST" duration-ms="17509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dog]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dog toys]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Shakers Luvs Giraffe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAndSelectProdFromSuggesstion -->
+        <test-method is-config="true" signature="exit()[pri:0, instance:com.bpp.testCases.SearchProducts@74e52ef6]" started-at="2022-11-14T14:31:17 IST" name="exit" finished-at="2022-11-14T14:31:18 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- com.bpp.testCases.SearchProducts -->
+    </test> <!-- Search and Select from Suggestion -->
+  </suite> <!-- Basic Functions Test -->
+</testng-results>

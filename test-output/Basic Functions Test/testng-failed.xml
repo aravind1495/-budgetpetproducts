@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Basic Functions Test]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="myTest@Pass14"/>
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="url" value="https://www.budgetpetproducts.com.au/"/>
+  <parameter name="email" value="mrmeeseekz@null.net"/>
+  <test thread-count="5" name="Verify Login(failed)">
+    <classes>
+      <class name="com.bpp.testCases.VerifyLogin">
+        <methods>
+          <include name="verifyLogin" invocation-numbers="3"/>
+          <include name="getDriver"/>
+          <include name="exit"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- com.bpp.testCases.VerifyLogin -->
+    </classes>
+  </test> <!-- Verify Login(failed) -->
+  <test thread-count="5" name="Verify Order(failed)">
+    <parameter name="prodToSelect" value="Vetafarm South American Mix"/>
+    <classes>
+      <class name="com.bpp.testCases.VerifyOrder">
+        <methods>
+          <include name="navigateProductAndVerifyOrder" invocation-numbers="0"/>
+          <include name="getDriver"/>
+          <include name="exit"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- com.bpp.testCases.VerifyOrder -->
+    </classes>
+  </test> <!-- Verify Order(failed) -->
+  <test thread-count="5" name="Search and Verify Suggestion(failed)">
+    <parameter name="searchKey" value="cat"/>
+    <classes>
+      <class name="com.bpp.testCases.SearchProducts">
+        <methods>
+          <include name="getDriver"/>
+          <include name="exit"/>
+          <include name="verifySearchSuggestion"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- com.bpp.testCases.SearchProducts -->
+    </classes>
+  </test> <!-- Search and Verify Suggestion(failed) -->
+  <test thread-count="5" name="Search and Select from Suggestion(failed)">
+    <parameter name="prodToSelect" value="Shakers Luvs Giraffe"/>
+    <parameter name="selectSearchSuggestion" value="dog toys"/>
+    <parameter name="searchKey" value="dog"/>
+    <classes>
+      <class name="com.bpp.testCases.SearchProducts">
+        <methods>
+          <include name="getDriver"/>
+          <include name="exit"/>
+          <include name="searchAndSelectProdFromSuggesstion"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- com.bpp.testCases.SearchProducts -->
+    </classes>
+  </test> <!-- Search and Select from Suggestion(failed) -->
+</suite> <!-- Failed suite [Basic Functions Test] -->

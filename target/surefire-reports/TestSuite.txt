@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 60.996 s <<< FAILURE! - in TestSuite
+verifyLogin(com.bpp.testCases.VerifyLogin)  Time elapsed: 1.236 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Login error alert message mismatch expected [These credentials do not match our records.] but found [The username field is required.]
+	at com.bpp.testCases.VerifyLogin.verifyLogin(VerifyLogin.java:123)
+
+searchAndSelectProdFromSuggesstion(com.bpp.testCases.SearchProducts)  Time elapsed: 10.094 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (63de3e8ad0cb299e1c4509bdb2da466d)] -> xpath: (//div[@class='card'])[2]/div] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\pkkumar\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52123/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 63de3e8ad0cb299e1c4509bdb2da466d
+	at com.bpp.testCases.SearchProducts.searchAndSelectProdFromSuggesstion(SearchProducts.java:80)
+

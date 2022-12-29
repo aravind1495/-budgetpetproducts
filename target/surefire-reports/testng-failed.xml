@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Basic Functions Test]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="password" value="myTest@Pass14"/>
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="url" value="https://www.budgetpetproducts.com.au/"/>
+  <parameter name="email" value="mrmeeseekz@null.net"/>
+  <test thread-count="5" name="Verify Login(failed)" verbose="0">
+    <classes>
+      <class name="com.bpp.testCases.VerifyLogin">
+        <methods>
+          <include name="verifyLogin" invocation-numbers="0"/>
+          <include name="getDriver"/>
+          <include name="exit"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- com.bpp.testCases.VerifyLogin -->
+    </classes>
+  </test> <!-- Verify Login(failed) -->
+  <test thread-count="5" name="Search and Select from Suggestion(failed)" verbose="0">
+    <parameter name="prodToSelect" value="Shakers Luvs Giraffe"/>
+    <parameter name="selectSearchSuggestion" value="dog toys"/>
+    <parameter name="searchKey" value="dog"/>
+    <classes>
+      <class name="com.bpp.testCases.SearchProducts">
+        <methods>
+          <include name="getDriver"/>
+          <include name="exit"/>
+          <include name="searchAndSelectProdFromSuggesstion" invocation-numbers="0"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- com.bpp.testCases.SearchProducts -->
+    </classes>
+  </test> <!-- Search and Select from Suggestion(failed) -->
+</suite> <!-- Failed suite [Basic Functions Test] -->
